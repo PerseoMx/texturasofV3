@@ -1,0 +1,2333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>835</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #dce4e7;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: #f4f7f8;</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="1">
+     <widget class="QWidget" name="icon_name_widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+		background-color: rgb(41, 41, 41);
+		color:white;
+}
+
+QPushButton{
+	color:white;
+	text-align:left;
+	height:30px;
+	border:none;
+	padding-left:10px;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+}
+
+QPushButton:checked{
+	background-color:#FFFFFF;
+	color:#292929;
+	font-wight:bold;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="rightMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resource.qrc">:/images/logo1.svg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>TextureSoft</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>15</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="btn_Calcular02">
+           <property name="text">
+            <string>Calcular</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/images/calcular2.svg</normaloff>
+             <normalon>:/images/calcular1.svg</normalon>:/images/calcular2.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_Triangulo02">
+           <property name="text">
+            <string>Triángulo</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/images/Triangulo2.svg</normaloff>
+             <normalon>:/images/Triangulo1.svg</normalon>:/images/Triangulo2.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_Metodo02">
+           <property name="text">
+            <string>Metodología</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/images/metodologia2.svg</normaloff>
+             <normalon>:/images/metodologia1.svg</normalon>:/images/metodologia2.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_pH02">
+           <property name="text">
+            <string>pH</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/images/pH2.svg</normaloff>
+             <normalon>:/images/pH1.svg</normalon>:/images/pH2.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_Soporte02">
+           <property name="text">
+            <string>Soporte</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/images/soprte2.svg</normaloff>
+             <normalon>:/images/soprte1.svg</normalon>:/images/soprte2.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>248</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_salir02">
+         <property name="text">
+          <string>Sign Out</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/images/Logout2.svg</normaloff>
+           <normalon>:/images/Logout1.svg</normalon>:/images/Logout2.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>25</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QWidget" name="icon_only_widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	
+	background-color: rgb(41, 41, 41);
+}
+
+QPushButton{
+	color:white;
+	height:30px;
+	border:none;
+	border-radius:10px;
+	border-bottom-left-radius:10px;
+}
+
+QPushButton:checked{
+	background-color:#FFFFFF;
+	
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="rightMargin">
+        <number>9</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resource.qrc">:/images/logo1.svg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>15</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="btn_Calcular01">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/images/calcular2.svg</normaloff>
+             <normalon>:/images/calcular1.svg</normalon>:/images/calcular2.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_Triangulo01">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/images/Triangulo2.svg</normaloff>
+             <normalon>:/images/Triangulo1.svg</normalon>:/images/Triangulo2.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_Metodo01">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/images/metodologia2.svg</normaloff>
+             <normalon>:/images/metodologia1.svg</normalon>:/images/metodologia2.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_pH01">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/images/pH2.svg</normaloff>
+             <normalon>:/images/pH1.svg</normalon>:/images/pH2.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_Soporte01">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/images/soprte2.svg</normaloff>
+             <normalon>:/images/soprte1.svg</normalon>:/images/soprte2.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>248</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_salir01">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/images/Logout2.svg</normaloff>
+           <normalon>:/images/Logout1.svg</normalon>:/images/Logout2.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>25</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QWidget" name="main_menu" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QWidget" name="header_widget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>45</height>
+          </size>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>11</x>
+            <y>10</y>
+            <width>971</width>
+            <height>35</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="btn_menu">
+             <property name="styleSheet">
+              <string notr="true">border:none;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resource.qrc">
+               <normaloff>:/images/Menu.svg</normaloff>:/images/Menu.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>148</width>
+               <height>17</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="txt_buscar">
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>33</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">	background-color: rgb(255, 255, 255);
+	height:31px;	
+	border: 1px solid gray;
+	border-color: #a4ddd4;
+	border-radius: 4px;
+	color: black;</string>
+             </property>
+             <property name="placeholderText">
+              <string>Buscar datos...</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_buscar">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>130</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(114, 207, 192);
+color: black;
+font-wight:bold;
+border-radius: 8px;</string>
+             </property>
+             <property name="text">
+              <string>Buscar</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>238</width>
+               <height>17</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_calculator">
+             <property name="styleSheet">
+              <string notr="true">border:none;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resource.qrc">
+               <normaloff>:/images/calculator.svg</normaloff>:/images/calculator.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>30</width>
+               <height>30</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="styleSheet">
+          <string notr="true">background-color: #f4f7f8;</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="Calcular_page">
+          <widget class="QFrame" name="frame">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>90</y>
+             <width>551</width>
+             <height>311</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame{
+	
+	border-radius:8px;
+	border: 1px solid gray;
+	border-color: #a4ddd4;
+	background-color: rgb(255, 255, 255);
+	color:black;
+}
+
+
+
+QLabel{
+	border:none;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <widget class="QWidget" name="layoutWidget">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>531</width>
+              <height>291</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QWidget" name="widget" native="true">
+               <property name="styleSheet">
+                <string notr="true">QWidget{
+	border-radius: 10px;
+	background-color: rgb(114, 207, 192);
+	color:black;
+}
+
+QLineEdit{
+	
+	background-color: rgb(255, 255, 255);
+	height:25px;	
+	border:none;
+	border-radius:4px;
+	
+}
+
+QPushButton{
+	background-color:#292929;
+	font-wight:bold;
+	color:white;
+	border-radius: 8px;
+	
+}</string>
+               </property>
+               <widget class="QWidget" name="layoutWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>233</width>
+                  <height>261</height>
+                 </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <item>
+                  <widget class="QLabel" name="label_18">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Partículas precipitadas (cm)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_9">
+                     <item>
+                      <widget class="QLabel" name="lb_Arena_cm">
+                       <property name="text">
+                        <string>Arena (cm)</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="lb_Arcilla_cm">
+                       <property name="text">
+                        <string>Arcilla (cm)</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="lb_Limo_cm">
+                       <property name="text">
+                        <string>Limo (cm)</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="lb_Total_cm">
+                       <property name="text">
+                        <string>Total (cm)</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_8">
+                     <item>
+                      <widget class="QLineEdit" name="txt_Arena">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>33</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>11</pointsize>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="layoutDirection">
+                        <enum>Qt::LayoutDirection::LeftToRight</enum>
+                       </property>
+                       <property name="text">
+                        <string>0</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="txt_Arcilla">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>33</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>11</pointsize>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>0</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="txt_Limo">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>33</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>11</pointsize>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>0</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="txt_TotalCm">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>33</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>11</pointsize>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btn_calcular_por">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>31</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Calcular %</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget_2" native="true">
+               <property name="styleSheet">
+                <string notr="true">QWidget{
+	border-radius: 10px;
+	background-color: rgb(114, 207, 192);
+	color:black;
+}
+
+QLineEdit{
+	
+	background-color: rgb(255, 255, 255);
+	height:25px;	
+	border:none;
+	border-radius: 4px;
+	
+}
+
+QPushButton{
+	background-color:#292929;
+	font-wight:bold;
+	color:white;
+	border-radius:8px;
+	
+}</string>
+               </property>
+               <widget class="QWidget" name="layoutWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>226</width>
+                  <height>261</height>
+                 </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_14">
+                 <item>
+                  <widget class="QLabel" name="label_19">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Proporción de partículas (%)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_8">
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_7">
+                     <item>
+                      <widget class="QLabel" name="label_12">
+                       <property name="text">
+                        <string>Arena (%)</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_13">
+                       <property name="text">
+                        <string>Arcilla (%)</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_14">
+                       <property name="text">
+                        <string>Limo (%)</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_15">
+                       <property name="text">
+                        <string>Total (%)</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_6">
+                     <item>
+                      <widget class="QLineEdit" name="txt_ArenaPor">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>33</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>11</pointsize>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>0</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="txt_ArcillaPor">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>33</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>11</pointsize>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>0</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="txt_LimoPor">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>33</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>11</pointsize>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>0</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="txt_Total">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>33</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>11</pointsize>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btn_calcular_textu">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>31</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Determinar Textura</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="frame_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>410</y>
+             <width>981</width>
+             <height>351</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame{
+	
+	border-radius:8px;
+	border: 1px solid gray;
+	border-color: #a4ddd4;
+	background-color: rgb(255, 255, 255);
+	color:black;
+}
+
+QLabel{
+	border:none;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <widget class="QTableWidget" name="table_datos">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>961</width>
+              <height>321</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>961</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QHeaderView::section{
+	font-weight:bold;
+	background-color:#67c6b7;
+	color: white;
+}
+
+QTableWidget{
+	alternate-background-color: #ffffff;
+	background-color: #ffffff;
+}</string>
+            </property>
+            <attribute name="verticalHeaderMinimumSectionSize">
+             <number>22</number>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>Id</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Nombre</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Fecha</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Lote/parcela</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Arena (%)</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Arcilla (%)</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Limo (%)</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Textura Clasificada</string>
+             </property>
+            </column>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="frame_3">
+           <property name="geometry">
+            <rect>
+             <x>570</x>
+             <y>90</y>
+             <width>421</width>
+             <height>311</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame{
+	
+	border-radius:8px;
+	border: 1px solid gray;
+	border-color: #a4ddd4;
+	background-color: rgb(255, 255, 255);
+	color:black;
+}
+
+QLabel{
+	
+	background-color: #caf0ec;
+	
+	border:none;
+	
+}
+
+QPushButton{
+	background-color:#292929;
+	font-wight:bold;
+	color:white;
+	border-radius: 8px;
+	
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <widget class="QWidget" name="layoutWidget">
+            <property name="geometry">
+             <rect>
+              <x>12</x>
+              <y>10</y>
+              <width>381</width>
+              <height>291</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_15">
+             <item>
+              <widget class="QLabel" name="label_17">
+               <property name="maximumSize">
+                <size>
+                 <width>355</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>DIAGNÓSTICO TEXTURAL</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lab_textura">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>400</width>
+                 <height>300</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>25</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-radius:10px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <widget class="QPushButton" name="btn_guardar">
+                 <property name="maximumSize">
+                  <size>
+                   <width>130</width>
+                   <height>31</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(114, 207, 192);
+color: black;</string>
+                 </property>
+                 <property name="text">
+                  <string>Guardar en la BD</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_actualizar">
+                 <property name="maximumSize">
+                  <size>
+                   <width>130</width>
+                   <height>31</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Actualizar datos</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_11">
+               <item>
+                <widget class="QPushButton" name="btn_eliminar">
+                 <property name="maximumSize">
+                  <size>
+                   <width>130</width>
+                   <height>31</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 0, 0);</string>
+                 </property>
+                 <property name="text">
+                  <string>Eliminar datos</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_limpiar">
+                 <property name="maximumSize">
+                  <size>
+                   <width>130</width>
+                   <height>31</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Nuevo</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="frame_4">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>0</y>
+             <width>981</width>
+             <height>80</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame{
+	border-radius:8px;
+	border: 1px solid gray;
+	border-color: #a4ddd4;
+	color:black;
+
+}
+QDateEdit{
+	background-color: rgb(255, 255, 255);
+	height:31px;	
+	border: 1px solid gray;
+	border-color: #a4ddd4;
+	border-radius: 4px;
+	color: black;
+
+}
+
+QLineEdit{
+	
+	background-color: rgb(255, 255, 255);
+	height:31px;	
+	border: 1px solid gray;
+	border-color: #a4ddd4;
+	border-radius: 4px;
+	color: black;
+	
+}
+
+QLabel{
+	border:none;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <widget class="QWidget" name="layoutWidget">
+            <property name="geometry">
+             <rect>
+              <x>46</x>
+              <y>11</y>
+              <width>901</width>
+              <height>62</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <item>
+                <widget class="QLabel" name="lb_nombre">
+                 <property name="text">
+                  <string>Nombre y Apellido (Técnico / Analista)</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="txt_nombre">
+                 <property name="maximumSize">
+                  <size>
+                   <width>300</width>
+                   <height>33</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_11">
+               <item>
+                <widget class="QLabel" name="lb_lote">
+                 <property name="text">
+                  <string>Lote / Parcela</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="txt_lote">
+                 <property name="maximumSize">
+                  <size>
+                   <width>300</width>
+                   <height>33</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <item>
+                <widget class="QLabel" name="lb_fecha">
+                 <property name="text">
+                  <string>Fecha de Muestreo</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDateEdit" name="date_fecha">
+                 <property name="maximumSize">
+                  <size>
+                   <width>300</width>
+                   <height>33</height>
+                  </size>
+                 </property>
+                 <property name="calendarPopup">
+                  <bool>true</bool>
+                 </property>
+                 <property name="date">
+                  <date>
+                   <year>2026</year>
+                   <month>9</month>
+                   <day>16</day>
+                  </date>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="Triangulo_page">
+          <widget class="QFrame" name="frame_5">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>1011</width>
+             <height>731</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <widget class="QWidget" name="layoutWidget">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>10</y>
+              <width>941</width>
+              <height>681</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_16">
+             <item>
+              <widget class="QLabel" name="label_10">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: black;</string>
+               </property>
+               <property name="text">
+                <string>Triángulo de textura de suelos</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <spacer name="horizontalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Orientation::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>128</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_7">
+                 <property name="minimumSize">
+                  <size>
+                   <width>601</width>
+                   <height>581</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>15</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::FocusPolicy::TabFocus</enum>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-image: url(:/images/TrianguloTextura.png);</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Orientation::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>178</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="Metodo_page">
+          <widget class="QFrame" name="frame_6">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>971</width>
+             <height>751</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label_4">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>60</y>
+              <width>511</width>
+              <height>631</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#000000;&quot;&gt;TEXTURA DEL SUELO &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;&lt;br/&gt;La textura indica el contenido relativo de partículas de diferente tamaño, como la arena, el limo y la arcilla, en el suelo. Para conocer la textura del suelo en campo, se presentan varias metodologías, la presente aplicación considera la metodología de precipitación de partículas, siendo muy práctica y con resultados confiables.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600; color:#000000;&quot;&gt;PRUEBA DE LA BOTELLA PARA DETERMINAR LA TEXTURA DEL SUELO&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;- En una botella de vidrio colocar 8 cm de suelo previamente mezclada, y llénela con agua&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;- Agitar bien y dejar reposar durante una hora, durante ese tiempo las partículas de más peso se han sedimentado.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;- En la capa inferior se deposita la arena, en la parte media el limo y en la superior la arcilla. Si el agua no está completamente transparente, se debe a que la parte de arcilla mas fina aun está mezclada con el agua.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;- En la superficie del agua pueden flotar fragmentos de materia orgánica.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;- Medir la profundidad de la arena, limo y la arcilla en centímetros, los datos en centímetros introducir en el programa TextSoft en los campos respectivos,  para calcular las proporciones en porcentaje&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QWidget" name="layoutWidget">
+            <property name="geometry">
+             <rect>
+              <x>640</x>
+              <y>50</y>
+              <width>311</width>
+              <height>681</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_17">
+             <item>
+              <widget class="QFrame" name="frame_7">
+               <property name="frameShape">
+                <enum>QFrame::Shape::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Shadow::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_5">
+                <property name="geometry">
+                 <rect>
+                  <x>30</x>
+                  <y>20</y>
+                  <width>151</width>
+                  <height>141</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border-image: url(:/images/botellaA.png);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_8">
+               <property name="frameShape">
+                <enum>QFrame::Shape::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Shadow::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_8">
+                <property name="geometry">
+                 <rect>
+                  <x>40</x>
+                  <y>30</y>
+                  <width>131</width>
+                  <height>141</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border-image: url(:/images/botellaB.png);</string>
+                </property>
+                <property name="text">
+                 <string>l</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_9">
+               <property name="frameShape">
+                <enum>QFrame::Shape::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Shadow::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_9">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>20</y>
+                  <width>171</width>
+                  <height>171</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border-image: url(:/images/botellaC.png);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="pH_page">
+          <widget class="QLabel" name="lb_pH">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>150</y>
+             <width>501</width>
+             <height>91</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>50</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;pH&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QSlider" name="horizontalSlider">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>270</y>
+             <width>511</width>
+             <height>71</height>
+            </rect>
+           </property>
+           <property name="sizeIncrement">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="minimum">
+            <number>0</number>
+           </property>
+           <property name="maximum">
+            <number>14</number>
+           </property>
+           <property name="singleStep">
+            <number>1</number>
+           </property>
+           <property name="pageStep">
+            <number>10</number>
+           </property>
+           <property name="value">
+            <number>7</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="invertedAppearance">
+            <bool>false</bool>
+           </property>
+           <property name="invertedControls">
+            <bool>false</bool>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::TickPosition::TicksBelow</enum>
+           </property>
+           <property name="tickInterval">
+            <number>1</number>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lb_pH_Resultado">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>470</y>
+             <width>501</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>30</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>350</y>
+             <width>511</width>
+             <height>71</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="lb_ph0">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lb_ph01">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(244, 106, 7);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lb_ph02">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(251, 199, 1);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lb_ph03">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(244, 239, 0);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lb_ph04">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(180, 213, 0);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lb_ph05">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(130, 194, 45);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lb_ph06">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(74, 184, 61);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lb_ph07">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(6, 169, 63);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lb_ph08">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(26, 182, 101);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lb_ph09">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(0, 186, 181);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lb_ph10">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(65, 143, 205);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lb_ph11">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(55, 81, 168);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lb_ph12">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(90, 80, 166);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lb_ph13">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(97, 68, 160);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lb_ph14">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(70, 41, 134);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="Soporte_page">
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>90</y>
+             <width>471</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#000000;&quot;&gt;Acerca de TextureSoft&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;TextureSoft en su versión 3.0, es una aplicación desarrollada en lenguaje Python 3.5, con una interfaz gráfica creada en Pyside6-designer.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;La aplicación permite determinar la textura del suelo, basado en la clasificación de USDA, considerando 12 Clases texturales (ver triángulo textural).&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;La versión 3.0 integra una base de datos en SQlite, donde almacena de datos, puede actualizar y eliminar datos, con una interfaz moderna.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Versión suministrada por Ecoproductivo 2022-2026&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;a href=&quot;https://ecoproductivo.com/&quot;&gt;&lt;span style=&quot; font-weight:700; text-decoration: underline; color:#308cc6;&quot;&gt;https://ecoproductivo.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Version: 3.0(x86_64)&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Elaborado por: Ing. Richard Estrada&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txt_nombre</tabstop>
+  <tabstop>txt_lote</tabstop>
+  <tabstop>date_fecha</tabstop>
+  <tabstop>txt_Arena</tabstop>
+  <tabstop>txt_Arcilla</tabstop>
+  <tabstop>txt_Limo</tabstop>
+  <tabstop>txt_TotalCm</tabstop>
+  <tabstop>btn_calcular_por</tabstop>
+  <tabstop>txt_ArenaPor</tabstop>
+  <tabstop>txt_ArcillaPor</tabstop>
+  <tabstop>txt_LimoPor</tabstop>
+  <tabstop>txt_Total</tabstop>
+  <tabstop>btn_calcular_textu</tabstop>
+  <tabstop>btn_guardar</tabstop>
+  <tabstop>btn_actualizar</tabstop>
+  <tabstop>table_datos</tabstop>
+  <tabstop>btn_menu</tabstop>
+  <tabstop>btn_Calcular01</tabstop>
+  <tabstop>btn_Triangulo01</tabstop>
+  <tabstop>btn_Metodo01</tabstop>
+  <tabstop>btn_pH01</tabstop>
+  <tabstop>btn_Soporte01</tabstop>
+  <tabstop>btn_salir01</tabstop>
+  <tabstop>btn_Calcular02</tabstop>
+  <tabstop>btn_Triangulo02</tabstop>
+  <tabstop>btn_Metodo02</tabstop>
+  <tabstop>btn_pH02</tabstop>
+  <tabstop>btn_Soporte02</tabstop>
+  <tabstop>btn_salir02</tabstop>
+  <tabstop>btn_calculator</tabstop>
+  <tabstop>label_7</tabstop>
+  <tabstop>horizontalSlider</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btn_menu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icon_only_widget</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>293</x>
+     <y>33</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>47</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_menu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icon_name_widget</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>265</x>
+     <y>47</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>155</x>
+     <y>383</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_Soporte01</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_Soporte02</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>30</x>
+     <y>276</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_pH01</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_pH02</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>42</x>
+     <y>228</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>93</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_Metodo01</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_Metodo02</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>34</x>
+     <y>183</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_Triangulo01</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_Triangulo02</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>140</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>93</x>
+     <y>144</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_Calcular01</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_Calcular02</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>42</x>
+     <y>92</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>95</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_Calcular02</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_Calcular01</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>90</x>
+     <y>76</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>41</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_Triangulo02</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_Triangulo01</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>90</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>30</x>
+     <y>126</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_Metodo02</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_Metodo01</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>91</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>32</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_pH02</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_pH01</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>93</x>
+     <y>211</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>40</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_Soporte02</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>btn_Soporte01</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>91</x>
+     <y>259</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>34</x>
+     <y>261</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_salir01</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>28</x>
+     <y>559</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>36</x>
+     <y>604</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_salir02</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>136</x>
+     <y>568</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>136</x>
+     <y>630</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

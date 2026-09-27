@@ -1,0 +1,26 @@
+<RCC>
+  <qresource>
+    <file>images/calculator.svg</file>
+    <file>images/botellaA.png</file>
+    <file>images/botellaB.png</file>
+    <file>images/botellaC.png</file>
+    <file>images/TrianguloTextura.png</file>
+    <file>images/acount.png</file>
+    <file>images/calcular1.svg</file>
+    <file>images/calcular2.svg</file>
+    <file>images/image.png</file>
+    <file>images/logo1.svg</file>
+    <file>images/logo2.svg</file>
+    <file>images/Logout1.svg</file>
+    <file>images/Logout2.svg</file>
+    <file>images/Menu.svg</file>
+    <file>images/metodologia1.svg</file>
+    <file>images/metodologia2.svg</file>
+    <file>images/pH1.svg</file>
+    <file>images/pH2.svg</file>
+    <file>images/soprte1.svg</file>
+    <file>images/soprte2.svg</file>
+    <file>images/Triangulo1.svg</file>
+    <file>images/Triangulo2.svg</file>
+  </qresource>
+</RCC>
